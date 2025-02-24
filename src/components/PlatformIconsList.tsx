@@ -1,4 +1,4 @@
-import { Platform } from "../hooks/useGames";
+import { Platform } from "../hooks/usePlatforms";
 import { HStack, Icon } from "@chakra-ui/react";
 
 import {
@@ -35,6 +35,8 @@ const PlatformIconsList = ({ platforms }: Props) => {
         return MdPhoneIphone;
       case "nintendo":
         return SiNintendo;
+      default:
+        return undefined;
     }
   };
 
